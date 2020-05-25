@@ -72,6 +72,7 @@
                 <span class="section-heading-lower">Contact me</span>
                  </center>
               </h2>
+              <!--
               <form action="mail.php" method="post">
                         <div class="contact-clean">
                         <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
@@ -79,6 +80,19 @@
                         <div class="form-group"><textarea class="form-control" rows="1" name="subject" placeholder="Subject"></textarea></div>
                         <div class="form-group"><textarea class="form-control" rows="14" name="message" placeholder="Message"></textarea></div>
                         <div class="form-group"><button class="btn btn-primary" type="submit">send </button></div>
+              </form>
+              -->
+              <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/oriol.corroto@gmail.com" method="post">
+                <fieldset id="fs-frm-inputs">
+                  <label for="full-name">Name</label>
+                  <input type="text" name="name" id="full-name" placeholder="" required="">
+                  <label for="email-address">Email</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="email@example.com" required="">
+                    <label for="message">Message</label>
+                    <textarea rows="5" name="message" id="message" placeholder="" required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Submit">
               </form>
             </div>
           </div>
