@@ -45,3 +45,10 @@ ul.dropdown-menu.dropdown-menu-select.show {
 ul.dropdown-menu.dropdown-menu-select.show input[type="radio"] {
     display: none;
 }
+
+a{
+    color: #df902a;
+}
+a:hover{
+    color: #e6a756;
+}
