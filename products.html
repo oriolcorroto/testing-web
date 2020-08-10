@@ -47,13 +47,43 @@
 
   <!-- Custom styles for this template -->
   <link href="css/business-casual.min.css" rel="stylesheet">
+  <link href="css/corroto.css" rel="stylesheet">
+  <link href="css/fontawesome.css" rel="stylesheet">
 
 </head>
 
 <body>
 
+  
+<form>
+  <div class="language dropdown">
+    <button type="button" class="btn btn-select" data-toggle="dropdown">
+      <i class="fas fa-globe-europe fa-2x text-primary"></i>
+      
+    </button>
+    <ul class="dropdown-menu dropdown-menu-select">
+    <li><label class="dropdown-radio">
+        <input type="radio" value="en" name="lang" checked>
+        <i>EN</i>
+        </label>
+    </li>
+    <li><label class="dropdown-radio">
+        <input type="radio" value="ca" name="lang">
+        <i>CA</i>
+        </label>
+    </li>
+    <li><label class="dropdown-radio">
+        <input type="radio" value="es" name="lang">
+        <i>ES</i>
+        </label>
+    </li>
+    </ul>
+  </div>
+</form>
+  
+
   <h1 class="site-heading text-center text-white d-none d-lg-block">
-    <span class="site-heading-upper text-primary mb-3">Musician & Sound Engineer</span>
+    <span class="site-heading-upper text-primary mb-3" data-i18n="title">Musician & Sound Engineer</span>
     <span class="site-heading-lower">Oriol Corroto</span>
     <span class="site-heading-upper text-primary mb-3">UNDER CONSTRUCTION</span>
   </h1>
