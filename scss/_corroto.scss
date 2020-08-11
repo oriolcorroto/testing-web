@@ -67,7 +67,6 @@ ul.dropdown-menu.dropdown-menu-select.show {
 }
 
 /* CUSTOM MENU */
-
 .toggle, [id^=drop] {
   display: none;
 }
@@ -79,6 +78,10 @@ nav {
   padding: 0;
   z-index: 1;
 
+label.toggle {
+    margin-bottom: -3.4em;
+    color: transparent;
+}
   &:after {
     content: "";
     display: table;
@@ -193,7 +196,7 @@ li > a:only-child:after { content: ''; }
 
   .toggle + a, .menu {
       display: block;
-    margin-top: -3em;
+    margin-top: 1em;
     width: 6em;
     padding: 0!important;
     margin-left: 3em;
@@ -229,6 +232,9 @@ input[type=drop]:checked ~ .toggle:after {
   /* Change menu item's width to 100% */
 
   nav {
+  	label.toggle {
+  		color: var(--txt-white);
+  	}
     ul {
       li {
         display: block;
