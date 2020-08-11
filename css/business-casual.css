@@ -423,7 +423,12 @@ li > a:only-child:after { content: ''; }
   /* Hide the navigation menu by default */
   /* Also hide the  */
   .toggle + a, .menu {
-    display: none;
+    display: block;
+    margin-top: -3em;
+    width: 6em;
+    padding: 0 !important;
+    margin-left: 3em;
+    margin-bottom: 0.99em;
   }
   /* Stylinf the toggle lable */
   .toggle {
@@ -434,11 +439,12 @@ li > a:only-child:after { content: ''; }
     border: none;
   }
   .toggle:hover {
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   /* Display Dropdown when clicked on Parent Lable */
   [id^=drop]:checked + ul {
     display: block;
+    background-color: rgba(0, 0, 0, 0.3);
   }
   input[type=drop]:checked ~ .toggle:after {
     content: "-" !important;
