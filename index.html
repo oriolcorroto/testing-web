@@ -47,7 +47,6 @@ $(document).ready(function(){
 
   <!-- Custom styles for this template -->
   <link href="css/business-casual.min.css" rel="stylesheet">
-  <link href="css/corroto.css" rel="stylesheet">
   <link href="css/fontawesome.css" rel="stylesheet">
 
 </head>
@@ -102,8 +101,29 @@ $(document).ready(function(){
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="products.html" data-i18n="menu_services">Services</a>
+          <li>
+            <!-- First Tier Drop Down -->
+
+            <label for="drop-2" class="toggle" data-i18n="menu_services">Services</label>
+            <a href="products.html" data-i18n="menu_services">Services</a>
+            <input type="checkbox" id="drop-2"/>
+            <ul>
+              <li>
+                <a href="products.html#section1">Guitarist</a>
+              </li>
+              <li>
+                <a href="products.html#section2">Percussionist</a>
+              </li>
+              <li>
+                <a href="products.html#section3">Music coaching</a>
+              </li>
+              <li>
+                <a href="products.html#section4">Sound Engineer</a>
+              </li>
+              <li>
+                <a href="products.html#section5">Management</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="management.html" data-i18n="menu_management">Management</a>
