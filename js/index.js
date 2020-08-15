@@ -1,3 +1,23 @@
+function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+}
+function getCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
 class Translator {
   constructor(options = {}) {
     this._options = Object.assign({}, this.defaultConfig, options);
@@ -6,6 +26,9 @@ class Translator {
   }
 
   getLanguage() {
+    if (getCookie("web_lang")){
+      return getCookie("web_lang");
+    }
     if (!this._options.detectLanguage) {
       return this._options.defaultLanguage;
     }
@@ -92,8 +115,10 @@ var translator = new Translator({
 
 translator.load();
 
-document.querySelector("form").addEventListener("click", function(evt) {
+document.getElementById("translate").addEventListener("click", function(evt) {
   if (evt.target.tagName === "INPUT") {
     translator.load(evt.target.value);
+    setCookie("web_lang", evt.target.value, 86400); // 86400 = 1 day
+    console.log("holaquease");
   }
 });
