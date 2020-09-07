@@ -643,3 +643,8 @@ li > a:only-child:after { content: ''; }
     margin-bottom: 5vw !important;
   }
 }
+
+/* fix menu z-index */
+#mainNav {
+  z-index: 10;
+}
