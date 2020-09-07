@@ -74,9 +74,29 @@
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="products.html" data-i18n="menu_services">Services</a>
-            </li>
+            <li>
+            <!-- First Tier Drop Down -->
+            <label for="drop-2" class="toggle" data-i18n="menu_services">Services</label>
+            <a href="products.html" data-i18n="menu_services">Services</a>
+            <input type="checkbox" id="drop-2"/>
+            <ul>
+              <li>
+                <a href="products.html#guitarist" data-i18n="menu_services_1">Guitarist</a>
+              </li>
+              <li>
+                <a href="products.html#percussionist" data-i18n="menu_services_2">Percussionist</a>
+              </li>
+              <li>
+                <a href="products.html#musiccoaching" data-i18n="menu_services_3">Music coaching</a>
+              </li>
+              <li>
+                <a href="products.html#soundengineer" data-i18n="menu_services_4">Sound Engineer</a>
+              </li>
+              <li>
+                <a href="products.html#management" data-i18n="menu_services_5">Management</a>
+              </li>
+            </ul>
+          </li>
             <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="management.html" data-i18n="menu_management">Management</a>
             </li>
@@ -101,8 +121,8 @@
             <div class="bg-faded rounded p-5">
                <h2 class="section-heading mb-5">
                  <center>
-                <span class="section-heading-upper">Any questions?</span>
-                <span class="section-heading-lower">Contact me</span>
+                <span class="section-heading-upper" data-i18n="contact_title">Any questions?</span>
+                <span class="section-heading-lower" data-i18n="contact_subtitle">Contact me</span>
                  </center>
               </h2>
               
@@ -110,11 +130,11 @@
                 <fieldset id="fs-frm-inputs">
                         <div class="contact-clean">
                         <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
-                        <div class="form-group"><input class="form-control is-invalid" type="email" name="email" placeholder="Email"><small class="form-text text-danger">Please enter a correct email address.</small></div>
+                        <div class="form-group"><input class="form-control is-invalid" type="email" name="email" placeholder="Email"><small class="form-text text-danger" data-i18n="contact_error">Please enter a correct email address.</small></div>
                         <div class="form-group"><textarea class="form-control" rows="1" name="subject" placeholder="Subject"></textarea></div>
                         <div class="form-group"><textarea class="form-control" rows="14" name="message" placeholder="Message"></textarea></div>
                  </fieldset>
-                 <div class="form-group"><button class="btn btn-primary" type="submit">Send </button></div>
+                 <div class="form-group"><button class="btn btn-primary" type="submit" data-i18n="contact_send">Send </button></div>
               </form>
             </div>
           </div>

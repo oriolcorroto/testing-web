@@ -103,7 +103,27 @@
             </a>
           </li>
           <li class="nav-item active px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="products.html" data-i18n="menu_services">Services</a>
+            <!-- First Tier Drop Down -->
+            <label for="drop-2" class="toggle" data-i18n="menu_services">Services</label>
+            <a href="products.html" data-i18n="menu_services">Services</a>
+            <input type="checkbox" id="drop-2"/>
+            <ul>
+              <li>
+                <a href="products.html#guitarist" data-i18n="menu_services_1">Guitarist</a>
+              </li>
+              <li>
+                <a href="products.html#percussionist" data-i18n="menu_services_2">Percussionist</a>
+              </li>
+              <li>
+                <a href="products.html#musiccoaching" data-i18n="menu_services_3">Music coaching</a>
+              </li>
+              <li>
+                <a href="products.html#soundengineer" data-i18n="menu_services_4">Sound Engineer</a>
+              </li>
+              <li>
+                <a href="products.html#management"data-i18n="menu_services_5">Management</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="management.html" data-i18n="menu_management">Management</a>
@@ -121,49 +141,22 @@
       </div>
     </div>
   </nav>
-
-  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav mx-auto">
-          <div class="intro-button mx-auto">
-            <a class="btn btn-primary btn-xl" href="#section1">GUITARIST</a>
-          </div>
-          <div class="intro-button mx-auto">
-            <a class="btn btn-primary btn-xl" href="#section2">PERCUSSIONIST</a>
-          </div>
-          <div class="intro-button mx-auto">
-            <a class="btn btn-primary btn-xl" href="#section3">MUSIC COACHING</a>
-          </div>
-          <div class="intro-button mx-auto">
-            <a class="btn btn-primary btn-xl" href="#section4">SOUND ENGINEER</a>
-          </div>
-          <div class="intro-button mx-auto">
-            <a class="btn btn-primary btn-xl" href="#section5">MANAGEMENT</a>
-          </div>
-        </ul>
-      </div>
-    </div>
-  </nav>
   
   <section class="page-section">
-    <div class="container" id="section1">
+    <div class="container" id="guitarist">
       <div class="product-item">
         <div class="product-item-title d-flex">
           <div class="bg-faded p-5 d-flex mr-auto rounded">
             <h2 class="section-heading mb-0">
-              <span class="section-heading-upper">Studio & Live Sessions</span>
-              <span class="section-heading-lower">Guitarist</span>
+              <span class="section-heading-upper" data-i18n="guitar_service_title">Studio & Live Sessions</span>
+              <span class="section-heading-lower" data-i18n="guitar_service_subtitle">Guitarist</span>
             </h2>
           </div>
         </div>
         <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/products-01.jpg" alt="">
         <div class="product-item-description d-flex ml-auto">
           <div class="bg-faded p-5 rounded">
-            <p class="mb-0">With more than 20 years’ experience playing guitar, I can help you compose, play, or record guitar tracks of any musical genre as requested, and, using all my own equipment I can help you achieve the best quality outcome.</p>
+            <p class="mb-0" data-i18n="guitar_service_content">With more than 20 years’ experience playing guitar, I can help you compose, play, or record guitar tracks of any musical genre as requested, and, using all my own equipment I can help you achieve the best quality outcome.</p>
           </div>
         </div>
       </div>
@@ -171,20 +164,20 @@
   </section>
   
   <section class="page-section">
-    <div class="container" id="section2">
+    <div class="container" id="percussionist">
       <div class="product-item">
         <div class="product-item-title d-flex">
           <div class="bg-faded p-5 d-flex ml-auto rounded">
             <h2 class="section-heading mb-0">
-              <span class="section-heading-upper">Studio & Live Sessions</span>
-              <span class="section-heading-lower">Percussionist</span>
+              <span class="section-heading-upper" data-i18n="percu_service_title">Studio & Live Sessions</span>
+              <span class="section-heading-lower" data-i18n="percu_service_subtitle">Percussionist</span>
             </h2>
           </div>
         </div>
         <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/percu.jpg" alt="">
         <div class="product-item-description d-flex mr-auto">
           <div class="bg-faded p-5 rounded">
-            <p class="mb-0">After 15 years playing drums, and 8 years as the musical director of Banda Patilla, I can help you compose, play, or record the best percussion or drum track to achieve your musical goals.</p>
+            <p class="mb-0" data-i18n="percu_service_content">After 15 years playing drums, and 8 years as the musical director of Banda Patilla, I can help you compose, play, or record the best percussion or drum track to achieve your musical goals.</p>
           </div>
         </div>
       </div>
@@ -192,41 +185,41 @@
   </section>
   
   <section class="page-section">
-    <div class="container" id="section3">
+    <div class="container" id="musiccoaching">
       <div class="product-item">
         <div class="product-item-title d-flex">
           <div class="bg-faded p-5 d-flex mr-auto rounded">
             <h2 class="section-heading mb-0">
-              <span class="section-heading-upper">Studio & Live Performance</span>
-              <span class="section-heading-lower">Music Coaching</span>
+              <span class="section-heading-upper" data-i18n="coaching_service_title">Studio & Live Performance</span>
+              <span class="section-heading-lower" data-i18n="coaching_service_subtitle">Music Coaching</span>
             </h2>
           </div>
         </div>
         <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/products-03.jpg" alt="">
         <div class="product-item-description d-flex ml-auto">
           <div class="bg-faded p-5 rounded">
-            <p class="mb-0">Over 5 years in the live music industry has given me knowledge on when and where could be the best place to record your album and how to record it. I’ll help you plan your album and make the most of your time in the recording studio all the way to its release so that you make the best album possible. I can share some tips with you on how to be more efficient and relaxed, perform your live set, and how to adjust your staging to get the most out of your music and your performances.</p>
+            <p class="mb-0" data-i18n="coaching_service_content">Over 5 years in the live music industry has given me knowledge on when and where could be the best place to record your album and how to record it. I’ll help you plan your album and make the most of your time in the recording studio all the way to its release so that you make the best album possible. I can share some tips with you on how to be more efficient and relaxed, perform your live set, and how to adjust your staging to get the most out of your music and your performances.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
   
-      <section class="page-section" id="section4">
+      <section class="page-section" id="soundengineer">
     <div class="container">
       <div class="product-item">
         <div class="product-item-title d-flex">
           <div class="bg-faded p-5 d-flex ml-auto rounded">
             <h2 class="section-heading mb-0">
-              <span class="section-heading-upper">Live, Recording Sessions and Mixing</span>
-              <span class="section-heading-lower">Sound Engineer</span>
+              <span class="section-heading-upper" data-i18n="engineer_service_title">Live, Recording Sessions and Mixing</span>
+              <span class="section-heading-lower" data-i18n="engineer_service_subtitle">Sound Engineer</span>
             </h2>
           </div>
         </div>
         <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/mixing.jpg" alt="">
         <div class="product-item-description d-flex mr-auto">
           <div class="bg-faded p-5 rounded">
-            <p class="mb-0">As a Sound Engineer, we’ll focus on getting your best sound in any place: from your rehearsal room to an enormous stage for a live performance, as well as preparing your rider to ensure your stage requests are met to the best technical standards. We can record and mix your new album all in a professional studio.</p>
+            <p class="mb-0" data-i18n="engineer_service_content">As a Sound Engineer, we’ll focus on getting your best sound in any place: from your rehearsal room to an enormous stage for a live performance, as well as preparing your rider to ensure your stage requests are met to the best technical standards. We can record and mix your new album all in a professional studio.</p>
           </div>
         </div>
       </div>
@@ -234,20 +227,20 @@
   </section>
   
       <section class="page-section">
-    <div class="container" id="section5">
+    <div class="container" id="management">
       <div class="product-item">
         <div class="product-item-title d-flex">
           <div class="bg-faded p-5 d-flex ml-auto rounded">
             <h2 class="section-heading mb-0">
-              <span class="section-heading-upper">Website, Social Networks, Roadmanager</span>
-              <span class="section-heading-lower">Management</span>
+              <span class="section-heading-upper" data-i18n="management_service_title">Website, Social Networks, Roadmanager</span>
+              <span class="section-heading-lower" data-i18n="management_service_subtitle">Management</span>
             </h2>
           </div>
         </div>
         <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/products-02.jpg" alt="">
         <div class="product-item-description d-flex mr-auto">
           <div class="bg-faded p-5 rounded">
-            <p class="mb-0">Don’t let all the boring work get in the way of being a musician: be focused on your goal; create and play music. All the tasks such as finding gigs, interviews, and calls, or preparing the roadmaps for each gig, managing your social networks, updating your website, managing deals between customers and the band, registering your songs with a PRO to claim your rights or distributing your songs via the most popular DSPs… Leave it to me ;)</p>
+            <p class="mb-0" data-i18n="management_service_content">Don’t let all the boring work get in the way of being a musician: be focused on your goal; create and play music. All the tasks such as finding gigs, interviews, and calls, or preparing the roadmaps for each gig, managing your social networks, updating your website, managing deals between customers and the band, registering your songs with a PRO to claim your rights or distributing your songs via the most popular DSPs… Leave it to me ;)</p>
           </div>
         </div>
       </div>
