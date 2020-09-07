@@ -447,3 +447,8 @@ input[type=drop]:checked ~ .toggle:after {
 		}
 	}
 }
+
+/* fix menu z-index */
+#mainNav {
+    z-index:10;  
+  }
