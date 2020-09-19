@@ -167,6 +167,15 @@ label.toggle {
   }
 }
 
+/* LOGO image */
+.logo-src {
+    width: 16em;
+    position: relative;
+    float: none;
+    display: flex;
+    margin: 0.5em auto;
+}
+
 /* Since we'll have the "ul li" "float:left"
  * we need to add a clear after the container. */
 
@@ -346,6 +355,7 @@ input[type=drop]:checked ~ .toggle:after {
 }
 /*ONLY MOBILE DEVICES*/
 @media (max-width: 991.98px) { 
+  .logo-src {width:40vw;}
 	.p-5 {
 		padding:5vw!important;
 	}
