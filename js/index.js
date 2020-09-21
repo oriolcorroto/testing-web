@@ -119,6 +119,5 @@ document.getElementById("translate").addEventListener("click", function(evt) {
   if (evt.target.tagName === "INPUT") {
     translator.load(evt.target.value);
     setCookie("web_lang", evt.target.value, 86400); // 86400 = 1 day
-    console.log("holaquease");
   }
 });
