@@ -275,6 +275,28 @@ a:hover {
   transition: all ease 0.3s;
 }
 
+.bg-faded {
+  padding: 7vh;
+}
+
+.page-section {
+  margin-top: 7vh;
+}
+
+.cta {
+  margin: 5vh 0;
+  padding: 6.5vh;
+}
+
+.site-heading {
+  margin-top: 3.5vh;
+  margin-bottom: 3.5vh;
+}
+
+.site-heading .site-heading-upper {
+  font-weight: 600;
+}
+
 .section-heading span.section-heading-lower {
   color: var(--brown);
 }
@@ -419,6 +441,7 @@ nav ul ul ul li {
 /* LOGO image */
 .logo-src {
   width: 16em;
+  max-width: 400px;
   position: relative;
   float: none;
   display: flex;
