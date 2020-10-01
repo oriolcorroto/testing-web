@@ -233,12 +233,13 @@ li > a:only-child:after { content: ''; }
   /* Also hide the  */
 
   .toggle + a, .menu {
-      display: block;
+  	display: block;
     margin-top: 1em;
     width: 6em;
     padding: 0!important;
-    margin-left: 3em;
-    margin-bottom: 0.99em;
+    margin-left: 50px;
+    margin-bottom: .99em;
+    color: transparent;
   }
 
   /* Stylinf the toggle lable */
