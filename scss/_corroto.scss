@@ -29,7 +29,7 @@ a {
 }
 .cta {
     margin: 5vh 0;
-    padding: 6.5vh;
+    padding: 3.5vh;
 }
 .site-heading {
 	margin-top: 3.5vh;
@@ -234,12 +234,14 @@ li > a:only-child:after { content: ''; }
 
   .toggle + a, .menu {
   	display: block;
-    margin-top: 1em;
-    width: 6em;
-    padding: 0!important;
-    margin-left: 50px;
+    margin-top: 0em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-bottom: 0!important;
+    margin-left: 35px;
     margin-bottom: .99em;
-    color: transparent;
+    color: var(--txt-white);
   }
 
   /* Stylinf the toggle lable */
@@ -272,7 +274,7 @@ input[type=drop]:checked ~ .toggle:after {
 
   nav {
   	label.toggle {
-  		color: var(--txt-white);
+  		color: transparent;
   	}
     ul {
       li {
@@ -409,6 +411,7 @@ input[type=drop]:checked ~ .toggle:after {
 				margin-top: 0.3em;
 				margin-right: 0.5em;
 				font-weight: normal;
+				color: var(--txt-white);
 			}
 			&:active:after, &:visited:after {
 				content: '-';

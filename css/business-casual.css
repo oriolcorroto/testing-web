@@ -285,7 +285,7 @@ a:hover {
 
 .cta {
   margin: 5vh 0;
-  padding: 6.5vh;
+  padding: 3.5vh;
 }
 
 .site-heading {
@@ -477,12 +477,14 @@ li > a:only-child:after { content: ''; }
   /* Also hide the  */
   .toggle + a, .menu {
     display: block;
-    margin-top: 1em;
-    width: 6em;
-    padding: 0 !important;
-    margin-left: 50px;
+    margin-top: 0em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-bottom: 0 !important;
+    margin-left: 35px;
     margin-bottom: .99em;
-    color: transparent;
+    color: var(--txt-white);
   }
   /* Stylinf the toggle lable */
   .toggle {
@@ -506,7 +508,7 @@ li > a:only-child:after { content: ''; }
   }
   /* Change menu item's width to 100% */
   nav label.toggle {
-    color: var(--txt-white);
+    color: transparent;
   }
   nav ul li {
     display: block;
@@ -619,6 +621,7 @@ li > a:only-child:after { content: ''; }
     margin-top: 0.3em;
     margin-right: 0.5em;
     font-weight: normal;
+    color: var(--txt-white);
   }
   .navbar-nav label.toggle:active:after, .navbar-nav label.toggle:visited:after {
     content: '-';
