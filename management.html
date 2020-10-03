@@ -2,13 +2,49 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179409703-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-179409703-1');
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+    });
+  });
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Oriol Corroto - Musician & Sound Engineer</title>
+  <title>Oriol Corroto - Musician, Sound Engineer & Management</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -56,7 +92,7 @@
 
   <h1 class="site-heading text-center text-white d-none d-lg-block">
     <img class="logo-src" src="img/firma.png" alt="Oriol Corroto">
-    <span class="site-heading-upper text-primary mb-3" data-i18n="title">Musician & Sound Engineer</span>
+    <span class="site-heading-upper text-primary mb-3" data-i18n="title">Musician, Sound Engineer & Management</span>
   </h1>
 
 <!-- START Bootstrap-Cookie-Alert -->
@@ -80,7 +116,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="index.html" data-i18n="menu_about">About
+            <a class="nav-link text-uppercase text-expanded" href="index.html" data-i18n="menu_about">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -108,7 +144,26 @@
             </ul>
           </li>
           <li class="nav-item active px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="management.html" data-i18n="menu_management">Management</a>
+            <label for="drop-3" class="toggle" data-i18n="menu_management">Management</label>
+              <a class="nav-link" href="management.html" data-i18n="menu_management">Management</a>
+              <input type="checkbox" id="drop-3"/>
+              <ul>
+                <li>
+                  <a href="management.html#nusduo">Nus Duo</a>
+                </li>
+                <li>
+                  <a href="management.html#thefunktonics">The Funktònics</a>
+                </li>
+                <li>
+                  <a href="management.html#lamulata">La Mulata</a>
+                </li>
+                <li>
+                  <a href="management.html#cucaviu">La Cuca Viu</a>
+                </li>
+                <li>
+                  <a href="management.html#offbeat">Off Beat Xperiment</a>
+                </li>
+              </ul>
           </li>
           <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="about.html" data-i18n="menu_experience">Experience</a>
@@ -125,7 +180,7 @@
   </nav>
 
   <section class="page-section about-heading">
-    <div class="container">
+    <div class="container" id="nusduo">
       <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/nus_pano.jpg" alt="">
       <div class="about-heading-content">
         <div class="row">
@@ -143,7 +198,7 @@
   </section>
   
     <section class="page-section about-heading">
-    <div class="container">
+    <div class="container" id="thefunktonics">
       <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/funktonics.jpg" alt="">
       <div class="about-heading-content">
         <div class="row">
@@ -161,7 +216,7 @@
   </section>
   
     <section class="page-section about-heading">
-    <div class="container">
+    <div class="container" id="lamulata">
       <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/lamulata.jpg" alt="">
       <div class="about-heading-content">
         <div class="row">
@@ -176,7 +231,43 @@
         </div>
       </div>
     </div>
-  </section>
+    </section>
+
+    <section class="page-section about-heading">
+    <div class="container" id="cucaviu">
+      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/cucaviu.jpg" alt="">
+      <div class="about-heading-content">
+        <div class="row">
+          <div class="col-xl-9 col-lg-10 mx-auto">
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper" data-i18n="style_cucaviu">Show for Children and Family</span>
+                <span class="section-heading-lower"><a href="http://lacucaviu.cat/" target="blank">La Cuca Viu</a></span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section class="page-section about-heading">
+    <div class="container" id="offbeat">
+      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/offbeat.jpg" alt="">
+      <div class="about-heading-content">
+        <div class="row">
+          <div class="col-xl-9 col-lg-10 mx-auto">
+            <div class="bg-faded rounded p-5">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-upper" data-i18n="style_offbeat">Reggae, Ska & Jazz Band</span>
+                <span class="section-heading-lower"><a href="http://offbeat-xperiment.com/" target="blank">Off Beat Xperiment</a></span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
 
   <footer class="footer text-faded text-center py-5">
     <div class="container">
